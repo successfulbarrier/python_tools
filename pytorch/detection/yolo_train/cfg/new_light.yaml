@@ -1,0 +1,28 @@
+names:
+  0: light_off_red
+  1: light_on_red
+  2: light_off_green
+  3: light_on_green
+  4: light_off_yellow
+  5: light_on_yellow
+  6: light_off_white
+  7: light_on_white
+  8: switch_one_0
+  9: switch_one_270
+  10: switch_two_0
+  11: switch_two_270
+  12: switch_three_0
+  13: switch_three_270
+  14: switch_four_0
+  15: switch_four_270
+  16: switch_five_0
+  17: switch_five_270
+  18: ya_ban_off
+  19: ya_ban_on
+  20: group_red
+  21: group_gree
+
+path: /home/hjw/D_disk/lht/new_light_dataset
+test:
+train: train/images
+val: val/images

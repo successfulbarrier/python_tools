@@ -1,0 +1,19 @@
+data:
+- id: 1
+  name: 学校
+- id: 2
+  name: 公寓
+- id: 3
+  name: 流动人口社区
+msg: 地址
+page: 1
+---
+data:
+- id: 1
+  name: 酒店
+- id: 2
+  name: 医院
+- id: 3
+  name: 养老院
+msg: 地址
+page: 2

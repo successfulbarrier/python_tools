@@ -1,0 +1,61 @@
+# yaml文件，文件名为yamlData
+
+# 第一组数据
+# 最外层以字典的方式读入
+os: Android
+osVersion: 10
+account:
+  username: xiaoqq
+  password: 123456
+deviceName: null
+appPackage: ~
+bool1: True
+# 列表
+list :
+  - aaa
+  - bbb
+  - ccc
+  - ddd
+  - eee
+  - fff
+  - ggg
+# 元组
+tuple :
+  !!python/tuple
+  - aaa
+  - bbb
+  - ccc
+  - ddd
+  - eee
+  - fff
+  - ggg
+
+# 第二组数据，不同组数据用 --- 分隔
+---
+os: Android2
+osVersion: 102.33
+account:
+  username: xiaoqq3
+  password: 123456.33
+deviceName: null
+appPackage: ~
+bool1: True
+# 列表
+list :
+  - aaa2
+  - bbb
+  - ccc
+  - ddd
+  - eee
+  - fff
+  - ggg
+# 元组
+tuple :
+  !!python/tuple
+  - aaa2
+  - bbb
+  - ccc
+  - ddd
+  - eee
+  - fff
+  - ggg

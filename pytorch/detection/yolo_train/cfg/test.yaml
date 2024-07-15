@@ -1,0 +1,45 @@
+# 超参数配置文件
+
+mode: train  # 模式
+
+# Train settings -------------------------------------------------------------------------------------------------------
+model: yolov8n.yaml # 模型配置文件
+data: coco128.yaml # 数据集配置文件
+weight:  # 权重文件，为空则不加载权重文件 VOCs_yolov8n.pth yolov8n.pth
+epochs: 50  # 训练轮数
+batch: 16  # 一批图片的数量
+imgsz: 640  # 输入图片大小
+save: True  # 是否保存训练结果
+device: 0  # 训练设备，没有代表使用CPU，也可以是 0,1,2 代表多GPU
+workers: 2  # 数据集加载是使用的核数
+project: exp # 结果保存文件夹的名称
+ch: 3  # 输入通道数
+# Val/Test settings ----------------------------------------------------------------------------------------------------
+val: True  # 是否使用验证集
+iou: 0.7  # 
+anchor_t: 4.0  # anchor-multiple threshold
+
+# Prediction settings --------------------------------------------------------------------------------------------------
+source:  # 预测时的输入图片路径
+show: False  # 是否展示预测结果
+save_txt: False  # 是否以txt格式保存预测结果
+
+
+# Hyperparameters ------------------------------------------------------------------------------------------------------
+optimize: SGD  # 使用哪种优化器
+lr0: 0.01  # 学习率
+lrf: 0.01  # 
+momentum: 0.8  # 动量
+cls_pw: 1.0  # cls BCELoss positive_weight
+obj_pw: 1.0  # obj BCELoss positive_weight
+fl_gamma: 0.0  # focal loss gamma (efficientDet default gamma=1.5)
+
+# yolov5
+#box: 0.05  # box loss gain
+#cls: 0.5  # cls loss gain
+#obj: 1.0  # obj loss gain
+
+# yolov8
+box: 7.5  # (float) box loss gain
+cls: 0.5  # (float) cls loss gain (scale with pixels)
+dfl: 1.5  # (float) dfl loss gain

@@ -1,0 +1,27 @@
+# -----------------训练使用-----------------
+# 类别字典
+names:
+  0: crack
+  1: rust
+  2: broken_lot
+  3: foreign_matter
+
+# 根目录
+path: H:/code/datasets/TS_dataset
+# 测试集
+test:
+# 训练集
+train: train/images
+# 验证集
+val: val/images
+
+# ----------------预处理使用-------------------
+# 整个数据据数据的路径，未划分之前
+# 图片路径
+images: images
+# txt标签路径
+labels: labels
+# json标签路径
+jsons: json
+# 类别文件
+classes: classes.txt
