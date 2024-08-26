@@ -8,14 +8,14 @@
 # @Desc    :   将jpeg后缀的文件修改成jpg文件
 import os
 
-path = "/media/lht/D_Project/datasets/light_dataset2/val/images"
+path = "/media/lht/LHT/light/dataset_add/images"
 
 # 获取目录下所有文件
 files = os.listdir(path)
 
 # 将jpeg后缀的文件修改成jpg后缀的文件
 for file in files:
-    if file.endswith(".jpeg"):
-        os.rename(os.path.join(path, file), os.path.join(path, file.replace(".jpeg", ".jpg")))
+    if file.endswith(".JPG"):
+        os.rename(os.path.join(path, file), os.path.join(path, file.replace(".JPG", ".jpg")))
 
 print("文件后缀修改完成！")

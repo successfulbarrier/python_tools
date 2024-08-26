@@ -14,8 +14,8 @@ import subprocess
 #-------------------------------------------------#
 #   文件路径
 #-------------------------------------------------#
-yolo_lable_path = "/media/lht/D_Project/datasets/light_dataset2/train/labels"
-new_yolo_lable_path = "/media/lht/D_Project/datasets/light_dataset2/train/labels_new"
+yolo_lable_path = "/media/lht/LHT/light/dataset_add/labels"
+new_yolo_lable_path = "/media/lht/LHT/light/dataset_add/labels_new"
 
 #-------------------------------------------------#
 #   要合并的类别，合并后的类别序号默认采用合并类别中最小的类别序号
