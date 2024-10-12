@@ -17,13 +17,13 @@ from tqdm import tqdm
 #-------------------------------------------------#
 parser = argparse.ArgumentParser(description='Process some integers.')
 parser.add_argument('--images_path', type=str, 
-                    default="/media/lht/LHT/light/dataset_add/images", 
+                    default="/media/lht/LHT/light/现场数据/图片", 
                     help='name of the user')
 parser.add_argument('--labels_path', type=str, 
-                    default="/media/lht/LHT/light/dataset_add/labels", 
+                    default="/media/lht/LHT/light/现场数据/labels", 
                     help='name of the user')
 parser.add_argument('--version', type=str, 
-                    default="v1", 
+                    default="v2", 
                     help='name of the user')
 args = parser.parse_args()
 

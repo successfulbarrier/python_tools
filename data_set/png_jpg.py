@@ -9,7 +9,7 @@
 import os
 from PIL import Image
 
-path = "/media/lht/D_Project/datasets/light_dataset2/train/images"
+path = "/media/lht/LHT/light/现场数据/图片"
 
 # 获取目录下所有文件
 files = os.listdir(path)
