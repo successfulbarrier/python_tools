@@ -15,10 +15,10 @@ import time
 from PIL import Image
 from tqdm import tqdm
 
-coco_format_save_path='H:\\code\\datasets\\TS_dataset4\\train\\annotations'                      #要生成的标准coco格式标签所在文件夹
-yolo_format_classes_path='H:\\code\\datasets\\TS_dataset4\\TS4.names'     #类别文件，一行一个类
-yolo_format_annotation_path='H:\\code\\datasets\\TS_dataset4\\train\\labels'        #yolo格式标签所在文件夹
-img_pathDir='H:\\code\\datasets\\TS_dataset4\\train\\images'                        #图片所在文件夹
+coco_format_save_path='/media/lht/LHT/code/datasets/TS_dataset5/val/annotations'          #要生成的标准coco格式标签所在文件夹
+yolo_format_classes_path='/media/lht/LHT/code/datasets/TS_dataset5/classes.names'         #类别文件，一行一个类
+yolo_format_annotation_path='/media/lht/LHT/code/datasets/TS_dataset5/val/labels'         #yolo格式标签所在文件夹
+img_pathDir='/media/lht/LHT/code/datasets/TS_dataset5/val/images'                         #图片所在文件夹
 
 with open(yolo_format_classes_path,'r') as fr:                               #打开并读取类别文件
     lines1=fr.readlines()
@@ -30,7 +30,7 @@ for j,label in enumerate(lines1):
 # print(categories)
 
 write_json_context=dict()                                                      #写入.json文件的大字典
-write_json_context['info']= {'description': '', 'url': '', 'version': '', 'year': 2021, 'contributor': '', 'date_created': '2021-07-25'}
+write_json_context['info']= {'description': '', 'url': '', 'version': '', 'year': 2024, 'contributor': '', 'date_created': '2024-07-25'}
 write_json_context['licenses']=[{'id':1,'name':None,'url':None}]
 write_json_context['categories']=categories
 write_json_context['images']=[]
@@ -48,7 +48,7 @@ for i,imageFile in tqdm(enumerate(imageFileList)):
     img_context['file_name']=imageFile
     img_context['height']=H
     img_context['width']=W
-    img_context['date_captured']='2021-07-25'
+    img_context['date_captured']='2024-07-25'
     img_context['id']=i                                                         #该图片的id
     img_context['license']=1
     img_context['color_url']=''
